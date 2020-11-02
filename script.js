@@ -1,3 +1,11 @@
+const preload = document.querySelector('.preload');
+
+preload.classList.add('show-preloader');
+window.addEventListener('load', () => {
+    preload.classList.remove('show-preloader');
+});
+
+
 //initialize AOS
 AOS.init({
     offset: 300,
@@ -55,9 +63,3 @@ window.onscroll = function () {
 
 
 
-const preload = document.querySelector('.preload');
-
-preload.classList.add('show-preloader');
-window.addEventListener('load', () => {
-    preload.classList.remove('show-preloader');
-});
