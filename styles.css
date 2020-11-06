@@ -3,7 +3,8 @@
 :root {
     --mainColor: rgb(240, 240, 240);
     --backgroundColor: #0B121E;
-    --primaryBtn: #4478a3;
+    --primaryColor: #00E5FF;
+    --secondarColor: #1200FF;
 }
 
 
@@ -110,6 +111,7 @@ nav {
     color: var(--mainColor);
     z-index: 9999;
     transition: .5s ease;
+    overflow: visible;
 }
 
 nav a {
@@ -133,8 +135,13 @@ ul li a {
     transition: .4s ease;
 }
 
-.logo a {
-    font-size: 1rem;
+.logo {
+    margin-top: -25px;
+    width: 120px;
+}
+
+.logo img {
+    width: 100%;
 }
 
 .menuBtn {
@@ -157,6 +164,7 @@ ul li a {
 
 .showNavbar {
     background-color: var(--backgroundColor);
+    overflow: hidden;
 }
 
 .anchor {
@@ -169,6 +177,7 @@ ul li a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        overflow: visible;
     }
 
     ul {
@@ -182,6 +191,11 @@ ul li a {
 
     .menuBtn {
         display: none;
+    }
+
+    .logo {
+        margin-top: 30px;
+        width: 180px;
     }
 
     .links {
@@ -242,16 +256,15 @@ ul li a {
 
 .btn {
     margin-top: 20px;
-    padding: 10px;
-    height: 50px;
-    width: 220px;
+    height: 30px;
+    width: 140px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     color: var(--mainColor);
-    font-size: 25px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    background: #222;
+    background: #0F131F;
     outline: none;
     cursor: pointer;
     transition: .3s ease;
@@ -259,10 +272,11 @@ ul li a {
 
 .btn:hover {
     background-color: var(--backgroundColor);
+    transform: translateY(3px);
 }
 
 .primary {
-    background-color: var(--primaryBtn);
+    background: linear-gradient(to right, #00E5FF, #1200FF);
 }
 
 .primary:hover {
@@ -329,6 +343,7 @@ ul li a {
 
 .project__info {
     margin-top: 20px;
+    width: 100%;
 }
 
 .project__info .btn {
@@ -391,7 +406,7 @@ ul li a {
 
 
 
-@media(min-width: 460px) {
+@media(min-width: 860px) {
     .project {
         flex-direction: row;
         justify-content: space-between;
@@ -414,6 +429,7 @@ ul li a {
     .project__info .btn {
         width: 200px;
     }
+
 }
 
 
