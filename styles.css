@@ -136,6 +136,7 @@ ul li a {
 }
 
 .logo {
+    margin-left: -12px;
     margin-top: -25px;
     width: 120px;
 }
@@ -194,6 +195,7 @@ ul li a {
     }
 
     .logo {
+        margin-left: 20px;
         margin-top: 30px;
         width: 180px;
     }
