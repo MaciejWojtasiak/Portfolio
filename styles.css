@@ -212,7 +212,7 @@ ul li a {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("./images/hero.jpg");
+    url("assets/images/hero.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -301,6 +301,71 @@ ul li a {
   }
 }
 
+/* Skills */
+
+.skills{
+  position: relative;
+  width: 100vw;
+  margin-top: 5rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  gap: 2rem;
+}
+
+.skills-container{
+  margin-top: 2rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.anchor#work{
+  position: absolute;
+  bottom: 50px;
+}
+.skill-card{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  cursor: pointer;
+  
+}
+.skill-card:hover .card-image img{
+  scale: 1.2;
+}
+.card-image {
+  width: 100%;
+  height: 80%;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: scale .2s;
+}
+
+@media(max-width:680px){
+  .skills{ 
+    padding: 0 5rem;   
+  }
+  .skill-card{
+    width: 100px;
+    height: 100px;
+  }
+  .card-title {
+    font-size: 12px;
+  }
+}
+
 .projects {
   position: relative;
   display: flex;
@@ -309,7 +374,7 @@ ul li a {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .projects p {
@@ -339,14 +404,14 @@ ul li a {
 
 .project__img {
   width: 100%;
-  height: auto;
-  -webkit-box-shadow: 1px 3px 9px -1px #000000;
-  box-shadow: 1px 3px 9px -1px #000000;
+  height: 288px;
 }
 
 .project__img img {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: contain;
 }
 
 .info__technologies {

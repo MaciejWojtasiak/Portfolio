@@ -21,10 +21,11 @@
       </div>
 
     <nav id="navbar"> 
-        <div class="logo"><a href="#home"><img src="images/logoV2.png" alt="logo"></a></div>
+        <div class="logo"><a href="#home"><img src="assets/images/logoV2.png" alt="logo"></a></div>
         <div class="links">
             <ul>
                 <li><a href="#home">home</a></li>                
+                <li><a href="#skills">skills</a></li>
                 <li><a href="#work">work</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
@@ -46,40 +47,90 @@
                 <button class="btn secondary" onclick="location.href='#contact'">contact</button>
                 </div>
         </div>
-        <div class="anchor"  id="work"></div>
+        <div class="anchor"id="skills"></div>
+   </section>
+   <section class="skills">
+    <div class="wrapper">
+    <div class="info" data-aos="fade-left">
+        <h1>My skills</h1>           
+        <p>Here are a few technologies I've been using recently, and I'm comfortable working with:</p>
+       </div>  
+    <div class="skills-container" data-aos="fade-right">
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/html.svg" alt="htmlIcon">
+            </div>
+                <p class="card-title">HTML5</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/css3.svg" alt="cssIcon">
+            </div>
+                <p class="card-title">CSS3</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/sass.svg" alt="sassIcon">
+            </div>
+                <p class="card-title">SASS</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/javascript.svg" alt="javascriptIcon">
+            </div>
+                <p class="card-title">JAVASCRIPT</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/react.svg" alt="reactIcon">
+            </div>
+                <p class="card-title">REACT.JS</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/nodejs.svg" alt="nodeIcon">
+            </div>
+                <p class="card-title">NODE.JS</p>        
+        </div>
+        <div class="skill-card">        
+            <div class="card-image">
+                <img src="assets/icons/mongodb.svg" alt="mongoIcon">
+            </div>
+                <p class="card-title">MONGODB</p>        
+        </div>         
+    </div>
+</div>
+        <div class="anchor" id="work"></div>
    </section>
 
-   <section class="projects">    
+   <section class="projects">        
        <div class="wrapper">
            <div class="info" data-aos="fade-left">
             <h1>My projects</h1>           
             <p>All of my projects are available on my <a href="">GitHub</a> page. I'm building my projects using HTML5, CSS3, SASS, JavaScript and external WebAPI services. </p>
-           </div>
-           
+           </div>       
            
            <div class="project" data-aos="fade-right">           
                    <div class="project__img">
-                       <a href="https://whiteride.pl" target="_blank"><img src="./images/whiteride.jpg" alt="whiteridePage"></a>
-                       
+                       <a href="https://maciejwojtasiak.github.io/REST-Countries/" target="_blank"><img src="assets/images/restCountries.png" alt="restcountriesPage"></a>
                    </div>
                    <div class="project__info">
-                       <h2>White Ride website</h2>
-                       <p>This is a website for a local wedding car rental company with beautiful, responsive design.</p>
+                       <h2>REST Countries</h2>
+                       <p><a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">Frontend Mentor</a> challange made with React.js and Sass</p>
                        <div class="info__technologies">
                         <h3>Technologies used:</h3>
-                        <div><ion-icon name="logo-html5" id="html"></ion-icon><p>HTML 5</p></div>
-                        <div><ion-icon name="logo-css3" id="css"></ion-icon><p>CSS 3</p></div>
-                        <div><ion-icon name="logo-javascript" id="js"></ion-icon><p>JavaScript</p></div>   
+                        <div><ion-icon name="logo-react" id="react"></ion-icon><p>React js</p></div>
+                        <div><ion-icon name="logo-sass" id="sass"></ion-icon><p>Sass</p></div>                       
                         </div>                        
-                        <button class="btn primary" onclick="location.href='https://www.whiteride.pl'" type="button">Live demo</button>
-                        <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/WhiteRide-website'" type="button">View Code</button>
+                        <button class="btn primary" onclick="location.href='https://maciejwojtasiak.github.io/REST-Countries/'" type="button">Live demo</button>
+                        <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/REST-Countries'" type="button">View Code</button>
                     </div>               
            </div>
 
 
            <div class="project" data-aos="fade-left">           
                 <div class="project__img">
-                    <a href="https://maciejwojtasiak.github.io/IP-Address-Tracker/" target="_blank"><img src="./images/tracker.jpg" alt="trackerPage"></a>                
+                    <a href="https://maciejwojtasiak.github.io/IP-Address-Tracker/" target="_blank"><img src="assets/images/tracker.jpg" alt="trackerPage"></a>                
                 </div>
             <div class="project__info">
                 <h2>IP Address Tracker</h2>
@@ -98,7 +149,7 @@
 
             <div class="project" data-aos="fade-right">           
                 <div class="project__img">
-                    <a href="https://maciejwojtasiak.github.io/WeatherApp/" target="_blank"><img src="./images/weatherApp.jpg" alt="weatherPage"></a>                
+                    <a href="https://maciejwojtasiak.github.io/WeatherApp/" target="_blank"><img src="assets/images/weatherApp.jpg" alt="weatherPage"></a>                
                 </div>
                 <div class="project__info">
                     <h2>Weather App</h2>
@@ -113,29 +164,11 @@
                     <button class="btn primary" onclick="location.href='https://maciejwojtasiak.github.io/WeatherApp/'" type="button">Live demo</button>
                     <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/WeatherApp'" type="button">View Code</button>
                 </div>                
-            </div> 
-                    
-            <div class="project" data-aos="fade-left">           
-                <div class="project__img">
-                    <a href="https://maciejwojtasiak.github.io/Rock-Paper-Scissors/" target="_blank"><img src="./images/RockPaperScissors.jpg" alt="RockPaperScissors"></a>                
-                </div>
-                <div class="project__info">
-                    <h2>Rock Paper Scissors Game</h2>
-                    <p>My first JavaScript game with is implementation of popular Rock Paper Scissors game.</p>
-                    <div class="info__technologies">
-                        <h3>Technologies used:</h3>
-                        <div><ion-icon name="logo-html5" id="html"></ion-icon><p>HTML 5</p></div>
-                        <div><ion-icon name="logo-css3" id="css"></ion-icon><p>CSS 3</p></div>
-                        <div><ion-icon name="logo-javascript" id="js"></ion-icon><p>JavaScript</p></div>   
-                    </div>
-                    <button class="btn primary" onclick="location.href='https://maciejwojtasiak.github.io/Rock-Paper-Scissors/'" type="button">Live demo</button>
-                    <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/Rock-Paper-Scissors'" type="button">View Code</button>
-                </div>                
-            </div> 
-
+            </div>                    
+            
             <div class="project" data-aos="fade-right">           
                 <div class="project__img">
-                    <a href="https://maciejwojtasiak.github.io/Portfolio/" target="_blank"><img src="./images/portfolio.jpg" alt="portfolio"></a>                
+                    <a href="https://maciejwojtasiak.github.io/Portfolio/" target="_blank"><img src="assets/images/portfolio.jpg" alt="portfolio"></a>                
                 </div>
                 <div class="project__info">
                     <h2>Portfolio</h2>
@@ -150,11 +183,10 @@
                     <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/Portfolio.git'" type="button">View Code</button>
                 </div>                
             </div> 
-    </div>   
-    <div class="anchor"  id="contact"></div>    
+    </div>    
    </section>
 
-   <section class="contact">
+   <section class="contact" id="contact">
        <div class="wrapper">
         <div class="info" data-aos="fade-left" data-aos-offset="50">
             <h1>Contact</h1>  
