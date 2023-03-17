@@ -356,6 +356,7 @@ ul li a {
 @media(max-width:680px){
   .skills-container {
     padding: 1rem;
+    gap: 1rem;
   }
   .skills{ 
     padding: 0 2rem;   
