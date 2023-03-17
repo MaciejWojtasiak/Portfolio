@@ -354,8 +354,11 @@ ul li a {
 }
 
 @media(max-width:680px){
+  .skills-container {
+    padding: 2rem;
+  }
   .skills{ 
-    padding: 0 5rem;   
+    padding: 0 2rem;   
   }
   .skill-card{
     width: 100px;
