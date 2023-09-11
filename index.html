@@ -109,8 +109,25 @@
             <h1>My projects</h1>           
             <p>All of my projects are available on my <a href="">GitHub</a> page. I'm building my projects using HTML5, CSS3, SASS, JavaScript and external WebAPI services. </p>
            </div>       
-           
            <div class="project" data-aos="fade-right">           
+            <div class="project__img">
+                <a href="https://blog-app-frontend-z4kp.onrender.com" target="_blank"><img src="assets/images/mainscreen.png" alt="blogAppScreen"></a>                
+            </div>
+            <div class="project__info">
+                <h2>Blog App</h2>
+                <p>This is a MERN stack blog app where you can share, like and comment posts with other users.</p>
+                <div class="info__technologies">
+                    <h3>Technologies used:</h3>
+                    <div><ion-icon name="logo-react" id="react"></ion-icon><p>React.js</p></div>                   
+                    <div><img class="icon" src="assets/icons/mongodb.svg" alt="mongoIcon"><p>mongoDB</p></div>   
+                    <div><img class="icon" src="assets/icons/nodejs.svg" alt="nodeIcon"><p>Node.js</p></div>   
+                </div>
+                <button class="btn primary" onclick="location.href='https://blog-app-frontend-z4kp.onrender.com'" type="button">Live demo</button>
+                <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/blogApp'" type="button">View Code</button>
+            </div>                
+        </div>      
+           
+           <div class="project" data-aos="fade-left">           
                    <div class="project__img">
                        <a href="https://maciejwojtasiak.github.io/REST-Countries/" target="_blank"><img src="assets/images/restCountries.png" alt="restcountriesPage"></a>
                    </div>
@@ -119,7 +136,7 @@
                        <p><a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">Frontend Mentor</a> challange made with React.js and Sass</p>
                        <div class="info__technologies">
                         <h3>Technologies used:</h3>
-                        <div><ion-icon name="logo-react" id="react"></ion-icon><p>React js</p></div>
+                        <div><ion-icon name="logo-react" id="react"></ion-icon><p>React.js</p></div>
                         <div><ion-icon name="logo-sass" id="sass"></ion-icon><p>Sass</p></div>                       
                         </div>                        
                         <button class="btn primary" onclick="location.href='https://maciejwojtasiak.github.io/REST-Countries/'" type="button">Live demo</button>
@@ -145,29 +162,9 @@
                     <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/WhiteRide-website'" type="button">View Code</button>
                </div>               
             </div>               
-            </div>
-           
+                
 
             <div class="project" data-aos="fade-right">           
-                <div class="project__img">
-                    <a href="https://maciejwojtasiak.github.io/WeatherApp/" target="_blank"><img src="assets/images/weatherApp.jpg" alt="weatherPage"></a>                
-                </div>
-                <div class="project__info">
-                    <h2>Weather App</h2>
-                    <p>Application displays one week weather forecast for the current user position based on geolocation. To run this application user need to give permission to report location information</p>
-                    <div class="info__technologies">
-                        <h3>Technologies used:</h3>
-                        <div><ion-icon name="logo-html5" id="html"></ion-icon><p>HTML 5</p></div>
-                        <div><ion-icon name="logo-css3" id="css"></ion-icon><p>CSS 3</p></div>
-                        <div><ion-icon name="logo-javascript" id="js"></ion-icon><p>JavaScript</p></div>   
-                        <div><ion-icon name="partly-sunny-outline" id="sun"></ion-icon><p>Weather API</p></div>   
-                    </div>
-                    <button class="btn primary" onclick="location.href='https://maciejwojtasiak.github.io/WeatherApp/'" type="button">Live demo</button>
-                    <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/WeatherApp'" type="button">View Code</button>
-                </div>                
-            </div>                    
-            
-            <div class="project" data-aos="fade-left">           
                 <div class="project__img">
                     <a href="https://maciejwojtasiak.github.io/Portfolio/" target="_blank"><img src="assets/images/portfolio.jpg" alt="portfolio"></a>                
                 </div>
@@ -184,6 +181,7 @@
                     <button class="btn secondary" onclick="location.href='https://github.com/MaciejWojtasiak/Portfolio.git'" type="button">View Code</button>
                 </div>                
             </div> 
+        </div>     
     </div>    
    </section>
 
@@ -206,7 +204,7 @@
 </div>
         
 </section>
-<footer>Maciej Wojtasiak &copy; 2020</footer>
+<footer>Maciej Wojtasiak &copy; 2023</footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="script.js"></script>
 </body>
